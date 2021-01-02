@@ -34,11 +34,11 @@ http://localhost:3000
 - store에 저장된 state에 접근할 때는, useSelector를 사용하여 접근한다.
 
 ## 파일 설명
--reducer 폴더
-    - 위에서 설명한 Redux 관련 파일들은 reducers 폴더에 있다.
-    - reducers/index.js 는 Root Reducer로 여러 reducer 를 관리한다.
-    - reducers/user.js 는 User와 관련된 reducer 이다. 이 파일에는 위에서 설명한 userState, Action Type, Action 생성 함수, Reducer 함수 모두 들어있다. 
-    - 이렇게 한 파일에서 관리하는 방식을 Ducks 패턴이라고 한다.
+- reducer 폴더
+  - 위에서 설명한 Redux 관련 파일들은 reducers 폴더에 있다.
+  - reducers/index.js 는 Root Reducer로 여러 reducer 를 관리한다.
+  - reducers/user.js 는 User와 관련된 reducer 이다. 이 파일에는 위에서 설명한 userState, Action Type, Action 생성 함수, Reducer 함수 모두 들어있다.
+  - 이렇게 한 파일에서 관리하는 방식을 Ducks 패턴이라고 한다.
 - hoc 폴더
     - auth.js 는 각 페이지에 접근 전, 헤더에 access-token을 넣어 서버에 인증을 요청하도록 한다.
     - 인증 받은 사용자만, User Page와 Admin Page를 이용할 수 있다.
