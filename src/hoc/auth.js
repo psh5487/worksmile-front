@@ -26,6 +26,9 @@ function Auth (Componet, option, props) {
           const user = res.data;
           console.log(user);
 
+          // 자동 로그인. user state 변화주기
+          dispatch(login(user));
+
           // Cookie에 토큰 저장
           Cookies.set('access-token', res.headers['access-token']);
         })
